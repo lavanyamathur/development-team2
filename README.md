@@ -2,8 +2,7 @@
 
 **Problem 4 — Genome Assembly Research Group**
 
-<<<<<<< HEAD
-Team: **Lavanya Mathur**, **Akshat Arora**, **Abhiraj Aaya**
+ **Lavanya Mathur**, **Akshat Arora**, **Abhiraj Aaya**
 =======
 Team: **Lavanya Mathur**, **Akshat Arora**, **Abhiraj Arya**
 >>>>>>> de7189fd10a43df1ae48039e6c3d2706bfedc7dc
