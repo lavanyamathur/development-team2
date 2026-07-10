@@ -1,16 +1,12 @@
-# Fast \& Memory-Efficient Genome Assembly Using AI
+# Fast & Memory-Efficient Genome Assembly Using AI
 
 **Problem 4 — Genome Assembly Research Group**
 
-<<<<<<< HEAD
-Team: **Lavanya Mathur**, **Akshat Arora**, **Abhiraj Aaya**
-=======
 Team: **Lavanya Mathur**, **Akshat Arora**, **Abhiraj Arya**
->>>>>>> de7189fd10a43df1ae48039e6c3d2706bfedc7dc
 
 Status: 🔧 Data recreated from the GNNome repository. Setup/reproduction phase in progress.
 
-\---
+---
 
 ## Problem Statement
 
@@ -18,10 +14,10 @@ Genome assembly — especially from long-read sequencing — is computationally 
 
 ## Our Approach
 
-We shrink [GNNome's](https://github.com/lvrcek/GNNome) GNN-based edge-scoring network (**full / half / quarter** size) and measure the accuracy–efficiency tradeoff as it shrinks, with fedrann approach in consideration. We test on:
+We shrink [GNNome's](https://github.com/lvrcek/GNNome) GNN-based edge-scoring network (**full / half / quarter** size) and measure the accuracy–efficiency tradeoff as it shrinks, with a Fedrann-based overlap detection approach also under consideration (see Pipeline below). We test on:
 
-* A **bacterial genome** — *E. coli* DH5α
-* A **human chromosome** — chr19 or chr21
+- A **bacterial genome** — *E. coli* DH5α
+- A **human chromosome** — chr19 or chr21
 
 with a specific eye on whether accuracy loss concentrates in **repetitive regions** or is spread evenly.
 
@@ -31,15 +27,16 @@ with a specific eye on whether accuracy loss concentrates in **repetitive region
 real genome → PBSIM3 (simulate long reads) → [exploring: Fedrann overlap detection] → Raven (build assembly graph)
            → GNNome (score edges/confidence) → search algorithm (follow high-confidence path)
            → assembled genome → QUAST (score against reference)
+```
 
 **Exploring: Fedrann before Raven.** We're currently evaluating whether inserting [Fedrann](https://github.com/jzhang-dev/FEDRANN) — a dimensionality-reduction + approximate-nearest-neighbor overlap detection method (Zhang, Miao et al., *GigaScience* 2026) — ahead of Raven improves overlap/assembly-graph accuracy compared to Raven's native overlap detection. This is not yet part of the confirmed pipeline; it's a parallel exploration to see if it's worth adopting.
 
 ## Genome Sources
 
-|Genome|Source|Notes|
-|-|-|-|
-|Bacterial|NCBI Nucleotide accession **CP017100** (*E. coli* DH5α)|Single reference genome, single strain, used consistently throughout|
-|Human|GNNome's own published test graphs (chr19 / chr21)|Used for direct comparability to GNNome's reported numbers|
+| Genome | Source | Notes |
+|---|---|---|
+| Bacterial | NCBI Nucleotide accession **CP017100** (*E. coli* DH5α) | Single reference genome, single strain, used consistently throughout |
+| Human | GNNome's own published test graphs (chr19 / chr21) | Used for direct comparability to GNNome's reported numbers |
 
 ## Key Research Notes
 
@@ -51,21 +48,22 @@ real genome → PBSIM3 (simulate long reads) → [exploring: Fedrann overlap det
 
 Depth (number of message-passing layers) is held roughly fixed — depth controls how far information propagates across the assembly graph, which matters for long-read path-following.
 
-|Variant|Description|
-|-|-|
-|**Full**|GNNome as published (\~220K params); reproduces their reported numbers|
-|**Half**|Half hidden-dim width, same depth|
-|**Quarter**|Quarter hidden-dim width, same depth|
+| Variant | Description |
+|---|---|
+| **Full** | GNNome as published (~220K params); reproduces their reported numbers |
+| **Half** | Half hidden-dim width, same depth |
+| **Quarter** | Quarter hidden-dim width, same depth |
 
 If the buffer week allows, a **depth-shrunk variant** will be added as a bonus.
 
 ### Open Decisions (still being finalized — see [Issues](../../issues))
 
-* \[ ] Exact width-reduction ratios for half/quarter
-* \[ ] Which LR values go into the per-size sweep, and the sweep protocol (grid vs. small manual search)
-* \[ ] Final call on whether the depth-shrunk variant happens at all (depends on buffer week time)
+- [ ] Exact width-reduction ratios for half/quarter
+- [ ] Which LR values go into the per-size sweep, and the sweep protocol (grid vs. small manual search)
+- [ ] Final call on whether the depth-shrunk variant happens at all (depends on buffer week time)
+- [ ] Whether to adopt Fedrann as a pre-Raven overlap-detection step — still exploring, not yet decided
 
-\---
+---
 
 ## Repository Structure
 
@@ -95,14 +93,15 @@ pip install -r requirements.txt
 
 See `docs/research-spec.md` for the full problem spec, `docs/progress-log.md` for a running log of what's been done and decided so far, and `CONTRIBUTING.md` for how to add your work.
 
+## Contributing
+
 All team members: please read [CONTRIBUTING.md](CONTRIBUTING.md) before pushing — it covers branch naming, commit style, and where experiment results/configs should live so everything stays comparable across variants and genomes.
 
 ## References
 
-* GNNome: https://github.com/lvrcek/GNNome
-* *E. coli* DH5α reference genome — NCBI Nucleotide accession [CP017100](https://www.ncbi.nlm.nih.gov/nuccore/CP017100)
-* Fedrann (overlap detection via dimensionality reduction + ANN search) — Zhang, Miao et al., *GigaScience* 2026, [doi.org/10.1093/gigascience/giag048](https://doi.org/10.1093/gigascience/giag048); code: [github.com/jzhang-dev/FEDRANN](https://github.com/jzhang-dev/FEDRANN)
-* PBSIM3
-* Raven assembler
-* QUAST
-
+- GNNome: https://github.com/lvrcek/GNNome
+- *E. coli* DH5α reference genome — NCBI Nucleotide accession [CP017100](https://www.ncbi.nlm.nih.gov/nuccore/CP017100)
+- Fedrann (overlap detection via dimensionality reduction + ANN search) — Zhang, Miao et al., *GigaScience* 2026, [doi.org/10.1093/gigascience/giag048](https://doi.org/10.1093/gigascience/giag048); code: [github.com/jzhang-dev/FEDRANN](https://github.com/jzhang-dev/FEDRANN)
+- PBSIM3
+- Raven assembler
+- QUAST
