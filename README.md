@@ -2,7 +2,11 @@
 
 **Problem 4 — Genome Assembly Research Group**
 
-Team: **\[Your Name]**, **Akshat Arora**, **Abhiraj Aarya**
+<<<<<<< HEAD
+Team: **Lavanya Mathur**, **Akshat Arora**, **Abhiraj Aaya**
+=======
+Team: **Lavanya Mathur**, **Akshat Arora**, **Abhiraj Arya**
+>>>>>>> de7189fd10a43df1ae48039e6c3d2706bfedc7dc
 
 Status: 🔧 Data recreated from the GNNome repository. Setup/reproduction phase in progress.
 
@@ -14,7 +18,7 @@ Genome assembly — especially from long-read sequencing — is computationally 
 
 ## Our Approach
 
-We shrink [GNNome's](https://github.com/lvrcek/GNNome) GNN-based edge-scoring network (**full / half / quarter** size) and measure the accuracy–efficiency tradeoff as it shrinks. We test on:
+We shrink [GNNome's](https://github.com/lvrcek/GNNome) GNN-based edge-scoring network (**full / half / quarter** size) and measure the accuracy–efficiency tradeoff as it shrinks, with fedrann approach in consideration. We test on:
 
 * A **bacterial genome** — *E. coli* DH5α
 * A **human chromosome** — chr19 or chr21
@@ -24,10 +28,11 @@ with a specific eye on whether accuracy loss concentrates in **repetitive region
 ### Pipeline
 
 ```
-real genome → PBSIM3 (simulate long reads) → Raven (build assembly graph)
+real genome → PBSIM3 (simulate long reads) → [exploring: Fedrann overlap detection] → Raven (build assembly graph)
            → GNNome (score edges/confidence) → search algorithm (follow high-confidence path)
            → assembled genome → QUAST (score against reference)
-```
+
+**Exploring: Fedrann before Raven.** We're currently evaluating whether inserting [Fedrann](https://github.com/jzhang-dev/FEDRANN) — a dimensionality-reduction + approximate-nearest-neighbor overlap detection method (Zhang, Miao et al., *GigaScience* 2026) — ahead of Raven improves overlap/assembly-graph accuracy compared to Raven's native overlap detection. This is not yet part of the confirmed pipeline; it's a parallel exploration to see if it's worth adopting.
 
 ## Genome Sources
 
@@ -95,6 +100,8 @@ All team members: please read [CONTRIBUTING.md](CONTRIBUTING.md) before pushing 
 ## References
 
 * GNNome: https://github.com/lvrcek/GNNome
+* *E. coli* DH5α reference genome — NCBI Nucleotide accession [CP017100](https://www.ncbi.nlm.nih.gov/nuccore/CP017100)
+* Fedrann (overlap detection via dimensionality reduction + ANN search) — Zhang, Miao et al., *GigaScience* 2026, [doi.org/10.1093/gigascience/giag048](https://doi.org/10.1093/gigascience/giag048); code: [github.com/jzhang-dev/FEDRANN](https://github.com/jzhang-dev/FEDRANN)
 * PBSIM3
 * Raven assembler
 * QUAST
