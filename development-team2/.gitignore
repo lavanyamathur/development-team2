@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Data (large genomic files — never commit)
+data/**/*.fasta
+data/**/*.fastq
+data/**/*.fa
+data/**/*.gfa
+data/**/reads/
+data/**/raven-graph/
+data/**/gnnome-graphs/
+!data/README.md
+
+# Results (large logs/reports — keep NOTES.md, ignore heavy artifacts)
+results/**/quast_report/
+results/**/*.log
+!results/**/NOTES.md
+!results/README.md
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/

@@ -1,0 +1,18 @@
+# Core
+numpy
+scipy
+pandas
+pyyaml
+
+# GNN / model (pin versions once GNNome's exact deps are confirmed)
+torch
+torch-geometric
+
+# Genomics tooling wrappers (these tools themselves are installed separately, not via pip:
+# PBSIM3, Raven, QUAST — see docs/research-spec.md)
+biopython
+
+# Notebooks / plotting
+matplotlib
+seaborn
+jupyter

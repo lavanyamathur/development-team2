@@ -1,0 +1,28 @@
+# Model variant configs — width-shrinking axis
+# Depth (num message-passing layers) held fixed across variants.
+# TODO(team): fill in exact width-reduction ratios once decided (see README > Open Decisions).
+
+full:
+  description: "GNNome as published (~220K params), reproduces reported numbers"
+  hidden_dim: null        # TODO: set to GNNome's published hidden_dim
+  num_layers: null        # TODO: set to GNNome's published depth
+  lr: null                # TODO: pending LR sweep protocol decision
+
+half:
+  description: "Half hidden-dim width, same depth"
+  hidden_dim: null         # TODO: full.hidden_dim / 2
+  num_layers: null         # same as full
+  lr: null
+
+quarter:
+  description: "Quarter hidden-dim width, same depth"
+  hidden_dim: null         # TODO: full.hidden_dim / 4
+  num_layers: null         # same as full
+  lr: null
+
+# Optional bonus variant (buffer-week dependent)
+depth_shrunk:
+  description: "Depth-shrunk variant — bonus point, only if buffer week allows"
+  hidden_dim: null         # same as full
+  num_layers: null         # TODO: reduced depth
+  lr: null
