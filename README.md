@@ -2,7 +2,7 @@
 
 **Problem 4 — Genome Assembly Research Group**
 
-Team: **[Your Name]**, **Akshat Arora**, **Abhiraj Aarya**
+Team: **Lavanya Mathur**, **Akshat Arora**, **Abhiraj Aarya**
 
 Status: 🔧 Data recreated from the GNNome repository. Setup/reproduction phase in progress.
 
@@ -14,7 +14,7 @@ Genome assembly — especially from long-read sequencing — is computationally 
 
 ## Our Approach
 
-We shrink [GNNome's](https://github.com/lvrcek/GNNome) GNN-based edge-scoring network (**full / half / quarter** size) and measure the accuracy–efficiency tradeoff as it shrinks. We test on:
+We shrink [GNNome's](https://github.com/lvrcek/GNNome) GNN-based edge-scoring network (**full / half / quarter** size) and measure the accuracy–efficiency tradeoff as it shrinks, with fedrann approach in consideration. We test on:
 
 - A **bacterial genome** — *E. coli* DH5α
 - A **human chromosome** — chr19 or chr21
