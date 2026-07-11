@@ -1,4 +1,4 @@
-/home/abhiraj_arya/miniconda3/envs/gnnome/bin/quast.py data/raven/assembly/0_assembly.fasta -r data/CP017100.fasta -o data/raven/quast_results
+/home/abhiraj_arya/miniconda3/envs/gnnome/bin/quast.py data/dh5alpha/raven/assembly/0_assembly.fasta -r data/dh5alpha/CP017100.fasta -o data/dh5alpha/quast_gnnome_raven
 
 Version: 5.3.0
 
@@ -7,9 +7,9 @@ System information:
   Python version: 3.8.20
   CPUs number: 12
 
-Started: 2026-07-09 21:06:20
+Started: 2026-07-10 20:46:54
 
-Logging to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/quast.log
+Logging to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/quast.log
 NOTICE: Maximum number of threads is set to 3 (use --threads option to set it manually)
 
 CWD: /home/abhiraj_arya/research/GNNome
@@ -18,68 +18,68 @@ Main parameters:
   ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
 
 Reference:
-  /home/abhiraj_arya/research/GNNome/data/CP017100.fasta ==> CP017100
+  /home/abhiraj_arya/research/GNNome/data/dh5alpha/CP017100.fasta ==> CP017100
 
 Contigs:
   Pre-processing...
-  data/raven/assembly/0_assembly.fasta ==> 0_assembly
+  data/dh5alpha/raven/assembly/0_assembly.fasta ==> 0_assembly
 
-2026-07-09 21:06:20
+2026-07-10 20:46:55
 Running Basic statistics processor...
   Reference genome:
     CP017100.fasta, length = 4583637, num fragments = 1, GC % = 50.77
   Contig files: 
     0_assembly
   Calculating N50 and L50...
-    0_assembly, N50 = 4581340, L50 = 1, auN = 4581340.0, Total length = 4581340, GC % = 50.77, # N's per 100 kbp =  0.00
+    0_assembly, N50 = 4635088, L50 = 1, auN = 4635088.0, Total length = 4635088, GC % = 50.79, # N's per 100 kbp =  0.00
   Drawing Nx plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/basic_stats/Nx_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/basic_stats/Nx_plot.pdf
   Drawing NGx plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/basic_stats/NGx_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/basic_stats/NGx_plot.pdf
   Drawing cumulative plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/basic_stats/cumulative_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/basic_stats/cumulative_plot.pdf
   Drawing GC content plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/basic_stats/GC_content_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/basic_stats/GC_content_plot.pdf
   Drawing 0_assembly GC content plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/basic_stats/0_assembly_GC_content_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/basic_stats/0_assembly_GC_content_plot.pdf
 Done.
 
-2026-07-09 21:06:21
+2026-07-10 20:46:56
 Running Contig analyzer...
   0_assembly
-  Logging to files /home/abhiraj_arya/research/GNNome/data/raven/quast_results/contigs_reports/contigs_report_0_assembly.stdout and contigs_report_0_assembly.stderr...
+  Logging to files /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/contigs_reports/contigs_report_0_assembly.stdout and contigs_report_0_assembly.stderr...
   Aligning contigs to the reference
   /home/abhiraj_arya/miniconda3/envs/gnnome/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join \
   -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs \
-  -t 3 data/raven/quast_results/quast_corrected_input/CP017100.fasta data/raven/quast_results/quast_corrected_input/0_assembly.fasta \
-  > data/raven/quast_results/contigs_reports/minimap_output/0_assembly.coords_tmp \
-  2>> data/raven/quast_results/contigs_reports/contigs_report_0_assembly.stderr
+  -t 3 data/dh5alpha/quast_gnnome_raven/quast_corrected_input/CP017100.fasta data/dh5alpha/quast_gnnome_raven/quast_corrected_input/0_assembly.fasta \
+  > data/dh5alpha/quast_gnnome_raven/contigs_reports/minimap_output/0_assembly.coords_tmp \
+  2>> data/dh5alpha/quast_gnnome_raven/contigs_reports/contigs_report_0_assembly.stderr
   Analysis is finished.
 
   Creating total report...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
   Transposed version of total report...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
   Creating total report...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
   Drawing misassemblies by types plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/contigs_reports/misassemblies_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/contigs_reports/misassemblies_plot.pdf
   Drawing misassemblies FRCurve plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/contigs_reports/misassemblies_frcurve_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/contigs_reports/misassemblies_frcurve_plot.pdf
 Done.
 
-2026-07-09 21:06:23
+2026-07-10 20:46:58
 Running NA-NGA calculation...
-  0_assembly, Largest alignment = 4581340, NA50 = 4581340, NGA50 = 4581340, LA50 = 1, LGA50 = 1
+  0_assembly, Largest alignment = 2071597, NA50 = 514071, NGA50 = 514071, LA50 = 2, LGA50 = 2
   Drawing cumulative plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/aligned_stats/cumulative_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/aligned_stats/cumulative_plot.pdf
   Drawing NAx plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/aligned_stats/NAx_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/aligned_stats/NAx_plot.pdf
   Drawing NGAx plot...
-    saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/aligned_stats/NGAx_plot.pdf
+    saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/aligned_stats/NGAx_plot.pdf
 Done.
 
-2026-07-09 21:06:23
+2026-07-10 20:46:58
 Running Genome analyzer...
   NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
 
@@ -91,24 +91,24 @@ Done.
 
 NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
 
-2026-07-09 21:06:24
+2026-07-10 20:46:59
 Creating large visual summaries...
 This may take a while: press Ctrl-C to skip this step..
   1 of 2: Creating PDF with all tables and plots...
   2 of 2: Creating Icarus viewers...
 Done
 
-2026-07-09 21:06:25
+2026-07-10 20:46:59
 RESULTS:
-  Text versions of total report are saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/report.txt, report.tsv, and report.tex
-  Text versions of transposed total report are saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
-  HTML version (interactive tables and plots) is saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/report.html
-  PDF version (tables and plots) is saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/report.pdf
-  Icarus (contig browser) is saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/icarus.html
-  Log is saved to /home/abhiraj_arya/research/GNNome/data/raven/quast_results/quast.log
+  Text versions of total report are saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/report.html
+  PDF version (tables and plots) is saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/report.pdf
+  Icarus (contig browser) is saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/icarus.html
+  Log is saved to /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/quast.log
 
-Finished: 2026-07-09 21:06:25
-Elapsed time: 0:00:04.925400
+Finished: 2026-07-10 20:46:59
+Elapsed time: 0:00:04.769784
 NOTICEs: 4; WARNINGs: 1; non-fatal ERRORs: 0
 
 Thank you for using QUAST!

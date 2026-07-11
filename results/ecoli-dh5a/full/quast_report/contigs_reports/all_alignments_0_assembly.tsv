@@ -1,3 +1,59 @@
 S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
-1848	4582286	1	4581340	CP017100.1	contig_1	99.88		True
-CONTIG	contig_1	4581340	correct
+2420	168786	1	166410	CP017100.1	contig_1	99.86		True
+relocation, inconsistency = 1338
+170125	259245	166411	255549	CP017100.1	contig_1	99.91		True
+relocation, inconsistency = 937343
+1196589	1197356	256318	255550	CP017100.1	contig_1	99.87		True
+relocation, inconsistency = 934716
+260807	261650	257384	256541	CP017100.1	contig_1	100.0		True
+relocation, inconsistency = 1329
+262980	278746	257385	273180	CP017100.1	contig_1	99.75		True
+relocation, inconsistency = 662491
+944889	945657	277600	276832	CP017100.1	contig_1	99.48		True
+relocation, inconsistency = -11477
+944889	945656	289078	288310	CP017100.1	contig_1	99.35		True
+relocation, inconsistency = -70762
+990555	991809	314174	312920	CP017100.1	contig_1	100.0		True
+relocation, inconsistency = 200694
+1235508	1248271	357179	370035	CP017100.1	contig_1	99.24		True
+relocation, inconsistency = -969934
+278737	308388	370435	400088	CP017100.1	contig_1	99.9		True
+local misassembly
+308384	471103	400807	563565	CP017100.1	contig_1	99.91		True
+relocation, inconsistency = 8471
+297706	298970	565773	564508	CP017100.1	contig_1	99.92		True
+relocation, inconsistency = 165579
+471101	472304	572325	573527	CP017100.1	contig_1	99.92		True
+relocation, inconsistency = -1402
+472299	986287	574924	1088994	CP017100.1	contig_1	99.92		True
+relocation, inconsistency = 1199
+987487	1096363	1088995	1197706	CP017100.1	contig_1	99.72		True
+relocation, inconsistency = 1261
+1097625	1192144	1197707	1292252	CP017100.1	contig_1	99.87		True
+local misassembly
+1192135	1196227	1293243	1297338	CP017100.1	contig_1	99.93		True
+relocation, inconsistency = 913747
+277193	278387	1298532	1297339	CP017100.1	contig_1	99.92		True
+relocation, inconsistency = 917836
+1196224	1196579	1298533	1298888	CP017100.1	contig_1	100.0		True
+local misassembly
+1197357	1205872	1298889	1307409	CP017100.1	contig_1	99.84		True
+relocation, inconsistency = 48378
+1254251	1344274	1307410	1397444	CP017100.1	contig_1	99.92		True
+relocation, inconsistency = 1199
+1345474	1855814	1397445	1907838	CP017100.1	contig_1	99.91		True
+relocation, inconsistency = 1199
+1857014	1925585	1907839	1976415	CP017100.1	contig_1	99.94		True
+relocation, inconsistency = 659657
+1196589	1197356	1977183	1976416	CP017100.1	contig_1	100.0		True
+relocation, inconsistency = 728221
+1925578	2120662	1977184	2172285	CP017100.1	contig_1	99.92		True
+relocation, inconsistency = 1199
+2121862	2506088	2172286	2556708	CP017100.1	contig_1	99.86		True
+relocation, inconsistency = -6791
+2506081	4375071	2563492	4432897	CP017100.1	contig_1	99.89		True
+local misassembly
+4375848	4483261	4432898	4540317	CP017100.1	contig_1	99.93		True
+local misassembly
+4484038	4578786	4540318	4635088	CP017100.1	contig_1	99.91		True
+CONTIG	contig_1	4635088	misassembled
