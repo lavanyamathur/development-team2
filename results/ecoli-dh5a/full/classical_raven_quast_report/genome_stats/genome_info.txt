@@ -1,5 +1,5 @@
 reference chromosomes:
-	CP017100.1 (total length: 4583637 bp, total length without N's: 4583637 bp, maximal covered length: 4580439 bp)
+	CP017100.1 (total length: 4583637 bp, total length without N's: 4583637 bp, maximal covered length: 4577549 bp)
 
 total genome size: 4583637
 
@@ -11,4 +11,4 @@ partial gene/operon min size: 100
 assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
                          | fraction  | ratio       | number    |           | genes     |           | operons   |
 ========================================================================================================================
-CP017100_assembly        | 99.930    | 1.000       | 2         | -         | -         | -         | -         |
+dh5alpha_asm             | 99.867    | 1.000       | 2         | -         | -         | -         | -         |

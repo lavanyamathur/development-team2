@@ -1,0 +1,47 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [CP017100.1]
+	Total Regions: 1
+	Total Region Length: 4583637
+Analyzing contigs...
+CONTIG: Utg1530 (4578923bp)
+Best alignment score: 4577058.4 (LEN: 4578890, IDY: 99.96), Total number of alignments: 1
+		One align captures most of this contig: 2313 4579861 | 6 4578895 | 4577549 4578890 | 99.96 | CP017100.1 Utg1530
+
+Analyzing coverage...
+Writing SNPs into /home/abhiraj_arya/research/GNNome/data/dh5alpha/classical_raven_quast_results/contigs_reports/minimap_output/dh5alpha_asm.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /home/abhiraj_arya/research/GNNome/data/dh5alpha/classical_raven_quast_results/contigs_reports/minimap_output/dh5alpha_asm.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 0
+		Relocations: 0
+		Translocations: 0
+		Inversions: 0
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 0
+	Misassembled Contig Bases: 0
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Bases in Fully and Partially Unaligned Contigs: 0
+
+Ambiguously Mapped Contigs: 0
+Total Bases in Ambiguously Mapped Contigs: 0
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 4577549
+	Raw Aligned Bases in Assembly: 4578890
+	Total Aligned Bases in Assembly (with "Extras"): 4578890
+
+	SNPs: 50
+	Insertions: 1584
+	Deletions: 243
+

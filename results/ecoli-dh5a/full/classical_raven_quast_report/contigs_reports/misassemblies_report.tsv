@@ -1,4 +1,4 @@
-Assembly	CP017100_assembly
+Assembly	dh5alpha_asm
 # misassemblies	0
   # contig misassemblies	0
     # c. relocations	0
@@ -14,8 +14,8 @@ Misassembled contigs length	0
 # scaffold gap ext. mis.	0
 # scaffold gap loc. mis.	0
 # unaligned mis. contigs	0
-# mismatches	708
-# indels	7375
-    # indels (<= 5 bp)	7372
-    # indels (> 5 bp)	3
-Indels length	8315
+# mismatches	50
+# indels	1614
+    # indels (<= 5 bp)	1614
+    # indels (> 5 bp)	0
+Indels length	1827

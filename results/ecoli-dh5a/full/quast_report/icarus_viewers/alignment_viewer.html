@@ -2446,10 +2446,10 @@
                 <span id="misassemblies_selector_panel">
                     <div class="text_div" id="misassemblies_checkboxes_div">
                         Show misassemblies:
-                        <label><input type="checkbox" id="relocation" name="misassemblies_select" checked="checked"/>relocations (0)</label>
+                        <label><input type="checkbox" id="relocation" name="misassemblies_select" checked="checked"/>relocations (23)</label>
                         <label><input type="checkbox" id="translocation" name="misassemblies_select" checked="checked"/>translocations (0)</label>
                         <label><input type="checkbox" id="inversion" name="misassemblies_select" checked="checked"/>inversions (0)</label>
-                        <label><input type="checkbox" id="local" name="misassemblies_select" checked="checked"/>local (0)</label>
+                        <label><input type="checkbox" id="local" name="misassemblies_select" checked="checked"/>local (5)</label>
                     </div>
                 </span>
             </div>
@@ -2499,9 +2499,9 @@ var assemblies_contigs = {};
 var assemblies_misassemblies = {};
 var assemblies_n50 = {};
 assemblies_links["0_assembly"] = "../contigs_reports/contigs_report_0_assembly.stdout";
-assemblies_len["0_assembly"] = 4581340;
+assemblies_len["0_assembly"] = 4535882;
 assemblies_contigs["0_assembly"] = 1;
-assemblies_misassemblies["0_assembly"] = "0+0";
+assemblies_misassemblies["0_assembly"] = "23+5";
 chromosome = "CP017100.1";
 var chrContigs = ["CP017100.1"];
 var features_data = [];
@@ -2513,7 +2513,35 @@ var oneHtml = true;
 var contig_data = {};
 contig_data["CP017100.1"] = {};
 contig_data["CP017100.1"]["0_assembly"] = [ 
-{name:"contig_1",corr_start:1848,corr_end:4582286,start:1848,end:4582286,misassemblies:"",mis_ends:"",is_best:"True"}];
+{name:"contig_1",corr_start:2420,corr_end:168786,start:2420,end:168786,misassemblies:";relocation",mis_ends:";R",is_best:"True"},
+{name:"contig_1",corr_start:170125,corr_end:259245,start:170125,end:259245,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:260807,corr_end:261650,start:260807,end:261650,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
+{name:"contig_1",corr_start:262980,corr_end:278746,start:262980,end:278746,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:277193,corr_end:278387,start:277193,end:278387,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
+{name:"contig_1",corr_start:278737,corr_end:308388,start:278737,end:308388,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:297706,corr_end:298970,start:297706,end:298970,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
+{name:"contig_1",corr_start:308384,corr_end:471103,start:308384,end:471103,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:471101,corr_end:472304,start:471101,end:472304,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:472299,corr_end:986287,start:472299,end:986287,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:944889,corr_end:945657,start:944889,end:945657,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
+{name:"contig_1",corr_start:944889,corr_end:945656,start:944889,end:945656,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
+{name:"contig_1",corr_start:987487,corr_end:1096363,start:987487,end:1096363,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:990555,corr_end:991809,start:990555,end:991809,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
+{name:"contig_1",corr_start:1097625,corr_end:1192144,start:1097625,end:1192144,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:1192135,corr_end:1196227,start:1192135,end:1196227,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:1196224,corr_end:1196579,start:1196224,end:1196579,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:1196589,corr_end:1197356,start:1196589,end:1197356,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
+{name:"contig_1",corr_start:1196589,corr_end:1197356,start:1196589,end:1197356,misassemblies:"relocation;relocation",mis_ends:"R;L",is_best:"True"},
+{name:"contig_1",corr_start:1197357,corr_end:1205872,start:1197357,end:1205872,misassemblies:"local;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:1235508,corr_end:1248271,start:1235508,end:1248271,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:1254251,corr_end:1344274,start:1254251,end:1344274,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:1345474,corr_end:1855814,start:1345474,end:1855814,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:1857014,corr_end:1925585,start:1857014,end:1925585,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:1925578,corr_end:2120662,start:1925578,end:2120662,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:2121862,corr_end:2506088,start:2121862,end:2506088,misassemblies:"relocation;relocation",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:2506081,corr_end:4375071,start:2506081,end:4375071,misassemblies:"relocation;local",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:4375848,corr_end:4483261,start:4375848,end:4483261,misassemblies:"local;local",mis_ends:"L;R",is_best:"True"},
+{name:"contig_1",corr_start:4484038,corr_end:4578786,start:4484038,end:4578786,misassemblies:"local;",mis_ends:"L",is_best:"True"}];
 var gc_window_size = 100;
 var gc_data = {};
 var max_gc = {};
@@ -2983,9 +3011,65 @@ var contig_lengths = {};
 var contig_structures = {};
 contig_lengths["0_assembly"] = {};
 contig_structures["0_assembly"] = {};
-contig_lengths["0_assembly"]["contig_1"] = 4581340;
+contig_lengths["0_assembly"]["contig_1"] = 4635088;
 contig_structures["0_assembly"]["contig_1"] = [ 
-{corr_start: 1848,corr_end: 4582286,start:1848,end:4582286,start_in_contig:1,end_in_contig:4581340,IDY:99.88,chr: "0"},
+{corr_start: 2420,corr_end: 168786,start:2420,end:168786,start_in_contig:1,end_in_contig:166410,IDY:99.86,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1338"},
+{corr_start: 170125,corr_end: 259245,start:170125,end:259245,start_in_contig:166411,end_in_contig:255549,IDY:99.91,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 937343"},
+{corr_start: 1196589,corr_end: 1197356,start:1196589,end:1197356,start_in_contig:256318,end_in_contig:255550,IDY:99.87,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 934716"},
+{corr_start: 260807,corr_end: 261650,start:260807,end:261650,start_in_contig:257384,end_in_contig:256541,IDY:100.0,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1329"},
+{corr_start: 262980,corr_end: 278746,start:262980,end:278746,start_in_contig:257385,end_in_contig:273180,IDY:99.75,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 662491"},
+{corr_start: 944889,corr_end: 945657,start:944889,end:945657,start_in_contig:277600,end_in_contig:276832,IDY:99.48,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -11477"},
+{corr_start: 944889,corr_end: 945656,start:944889,end:945656,start_in_contig:289078,end_in_contig:288310,IDY:99.35,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -70762"},
+{corr_start: 990555,corr_end: 991809,start:990555,end:991809,start_in_contig:314174,end_in_contig:312920,IDY:100.0,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 200694"},
+{corr_start: 1235508,corr_end: 1248271,start:1235508,end:1248271,start_in_contig:357179,end_in_contig:370035,IDY:99.24,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -969934"},
+{corr_start: 278737,corr_end: 308388,start:278737,end:308388,start_in_contig:370435,end_in_contig:400088,IDY:99.9,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "local misassembly"},
+{corr_start: 308384,corr_end: 471103,start:308384,end:471103,start_in_contig:400807,end_in_contig:563565,IDY:99.91,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 8471"},
+{corr_start: 297706,corr_end: 298970,start:297706,end:298970,start_in_contig:565773,end_in_contig:564508,IDY:99.92,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 165579"},
+{corr_start: 471101,corr_end: 472304,start:471101,end:472304,start_in_contig:572325,end_in_contig:573527,IDY:99.92,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -1402"},
+{corr_start: 472299,corr_end: 986287,start:472299,end:986287,start_in_contig:574924,end_in_contig:1088994,IDY:99.92,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1199"},
+{corr_start: 987487,corr_end: 1096363,start:987487,end:1096363,start_in_contig:1088995,end_in_contig:1197706,IDY:99.72,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1261"},
+{corr_start: 1097625,corr_end: 1192144,start:1097625,end:1192144,start_in_contig:1197707,end_in_contig:1292252,IDY:99.87,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "local misassembly"},
+{corr_start: 1192135,corr_end: 1196227,start:1192135,end:1196227,start_in_contig:1293243,end_in_contig:1297338,IDY:99.93,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 913747"},
+{corr_start: 277193,corr_end: 278387,start:277193,end:278387,start_in_contig:1298532,end_in_contig:1297339,IDY:99.92,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 917836"},
+{corr_start: 1196224,corr_end: 1196579,start:1196224,end:1196579,start_in_contig:1298533,end_in_contig:1298888,IDY:100.0,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "local misassembly"},
+{corr_start: 1197357,corr_end: 1205872,start:1197357,end:1205872,start_in_contig:1298889,end_in_contig:1307409,IDY:99.84,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 48378"},
+{corr_start: 1254251,corr_end: 1344274,start:1254251,end:1344274,start_in_contig:1307410,end_in_contig:1397444,IDY:99.92,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1199"},
+{corr_start: 1345474,corr_end: 1855814,start:1345474,end:1855814,start_in_contig:1397445,end_in_contig:1907838,IDY:99.91,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1199"},
+{corr_start: 1857014,corr_end: 1925585,start:1857014,end:1925585,start_in_contig:1907839,end_in_contig:1976415,IDY:99.94,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 659657"},
+{corr_start: 1196589,corr_end: 1197356,start:1196589,end:1197356,start_in_contig:1977183,end_in_contig:1976416,IDY:100.0,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 728221"},
+{corr_start: 1925578,corr_end: 2120662,start:1925578,end:2120662,start_in_contig:1977184,end_in_contig:2172285,IDY:99.92,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = 1199"},
+{corr_start: 2121862,corr_end: 2506088,start:2121862,end:2506088,start_in_contig:2172286,end_in_contig:2556708,IDY:99.86,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "relocation, inconsistency = -6791"},
+{corr_start: 2506081,corr_end: 4375071,start:2506081,end:4375071,start_in_contig:2563492,end_in_contig:4432897,IDY:99.89,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "local misassembly"},
+{corr_start: 4375848,corr_end: 4483261,start:4375848,end:4483261,start_in_contig:4432898,end_in_contig:4540317,IDY:99.93,chr: "0"},
+{contig_type: "M", mstype: "real", msg: "local misassembly"},
+{corr_start: 4484038,corr_end: 4578786,start:4484038,end:4578786,start_in_contig:4540318,end_in_contig:4635088,IDY:99.91,chr: "0"},
 ];</script>
     <script type="text/javascript" name="d3.js">
         (function() {

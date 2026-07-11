@@ -1,10 +1,10 @@
-[M::mm_idx_gen::0.098*1.00] collected minimizers
-[M::mm_idx_gen::0.112*1.19] sorted minimizers
-[M::main::0.112*1.19] loaded/built the index for 1 target sequence(s)
-[M::mm_mapopt_update::0.118*1.18] mid_occ = 200
+[M::mm_idx_gen::0.092*0.98] collected minimizers
+[M::mm_idx_gen::0.111*1.21] sorted minimizers
+[M::main::0.111*1.21] loaded/built the index for 1 target sequence(s)
+[M::mm_mapopt_update::0.117*1.20] mid_occ = 200
 [M::mm_idx_stat] kmer size: 19; skip: 19; is_hpc: 0; #seq: 1
-[M::mm_idx_stat::0.122*1.18] distinct minimizers: 448402 (99.19% are singletons); average occurrences: 1.023; average spacing: 9.996; total length: 4583637
-[M::worker_pipeline::0.902*1.02] mapped 1 sequences
+[M::mm_idx_stat::0.121*1.19] distinct minimizers: 448402 (99.19% are singletons); average occurrences: 1.023; average spacing: 9.996; total length: 4583637
+[M::worker_pipeline::0.907*1.03] mapped 1 sequences
 [M::main] Version: 2.28-r1209
-[M::main] CMD: /home/abhiraj_arya/miniconda3/envs/gnnome/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 3 /home/abhiraj_arya/research/GNNome/data/raven/quast_results/quast_corrected_input/CP017100.fasta /home/abhiraj_arya/research/GNNome/data/raven/quast_results/quast_corrected_input/0_assembly.fasta
-[M::main] Real time: 0.907 sec; CPU: 0.925 sec; Peak RSS: 0.085 GB
+[M::main] CMD: /home/abhiraj_arya/miniconda3/envs/gnnome/bin/minimap2 -c -x asm10 -B5 -O4,16 --no-long-join -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 --min-occ 200 -g 2500 --score-N 2 --cs -t 3 /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/quast_corrected_input/CP017100.fasta /home/abhiraj_arya/research/GNNome/data/dh5alpha/quast_gnnome_raven/quast_corrected_input/0_assembly.fasta
+[M::main] Real time: 0.911 sec; CPU: 0.935 sec; Peak RSS: 0.086 GB
